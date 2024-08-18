@@ -9,5 +9,7 @@ public class TileManager : MonoBehaviour
     void Update()
     {
         transform.Translate(0,-.03f,0);
+        if (transform.position.y < -10)
+            Destroy(gameObject);
     }
 }

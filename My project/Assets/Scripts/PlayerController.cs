@@ -26,5 +26,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(0, jumpForce);
         }
+        if (transform.position.y < -12)
+            Application.LoadLevel("SampleScene");
     }
 }
